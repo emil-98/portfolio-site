@@ -3,33 +3,31 @@ import {FaBars, FaTimes, FaGithub, FaLinkedin} from "react-icons/fa"
 import { HiMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from "../components/Logo"
+import ToggleSwitch from './ToggleSwitch'
 
 const Navbar = () => {
   const [nav, toggleNav] = useState(false);
   const handleClick = () => toggleNav(!nav);
 
   return(
-    <div className="fixed w-full h-[60px] flex justify-between items-center px-4 bg-slate-950 text-gray-400 shadow-[0_0_15px_rgba(0,0,0,0.5)]">
+    <div className="fixed w-full h-[60px] flex justify-between items-center px-4 bg-white dark:bg-slate-950 dark:text-gray-400 shadow-[0_0_15px_rgba(0,0,0,0.5)]">
       <div>
         <Logo/>
       </div>
 
-
       {/* Desktop Menu */}
       
       <div className='hidden md:flex'>
-        <span className='px-1'>🌚</span>
-        <label className='flex relative align-middle h-[24px] w-[40px] rounded-full bg-slate-400 duration-300 hover:shadow-[0_0_10px_rgba(255,255,255,0.5)]'> {/* Outer piece of switch */}
-          <input type='checkbox' className='opacity-0 w-[40px] h-[24px] align-middle peer cursor-pointer'/>
-          <span className='flex absolute left-[2px] top-[2px] h-[20px] w-[20px] rounded-full transition-all duration-100 bg-slate-950 peer peer-checked:translate-x-[16px] cursor-pointer'></span> {/* Slider inside switch */}
-        </label>
-        <span className='px-1'>🌞</span>
+        <ToggleSwitch
+          offIcon={'🌚'}
+          onIcon={'🌞'}
+        />
         <ul className='flex'>
-          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/'>Home</a></li>
-          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/about'>About</a></li>
-          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/skills'> Skills</a></li>
-          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/projects'>Projects</a></li>
-          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/contact'>Contact</a></li>
+          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/'>Home</a></li>
+          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/about'>About</a></li>
+          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/skills'> Skills</a></li>
+          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/projects'>Projects</a></li>
+          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/contact'>Contact</a></li>
         </ul>
       </div>
       
