@@ -10,7 +10,10 @@ import { Routes, Route } from 'react-router-dom'
 
 
 const App = () => {
-  
+
+  useEffect(() => {
+    
+  })
 
   return (
     <>

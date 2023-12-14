@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react'
 
-const ToggleSwitch = ({offIcon, onIcon, bgColor, sliderColor, defaultChecked = !window.matchMedia('(prefers-color-scheme: dark)').matches}) => {
+const ToggleSwitch = ({offIcon, onIcon, currState}) => {
 
-  const [isChecked, setIsChecked] = useState(defaultChecked)
+  const [isChecked, setIsChecked] = useState(currState)
 
 
   useEffect(() => {
     if(!isChecked){
       document.documentElement.classList.add('dark')
+      localStorage.setItem('theme', 'dark')
     }else{
       document.documentElement.classList.remove('dark')
+      localStorage.setItem('theme', 'light')
     }
   }, [isChecked])
 
