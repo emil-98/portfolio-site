@@ -1,0 +1,14 @@
+{
+  "about": [
+    {
+      "id": "0",
+      "title": "Education",
+      "text": "Throughout my education, I cultivated a deep interest in technology. I spent much of my free time in tenth grade teaching myself Javascript fundamentals and completed an honors class in C++ the following year. \n\nIn college, I had made up my mind to study Computer Science and focused my efforts on mastering Java. After developing a strong foundation in Object-Oriented Programming, I learned about finite state machines and developed a Turing machine in Java. While deepening my skills in Java, I also explored other avenues such as Flask web development and Linux application development with C. \n\nI completed my degree by designing and building a workout tracker app for Android that integrated a SQLite database and followed Material design conventions." 
+    },
+    {
+      "id": "1",
+      "title": "Experience",
+      "text": "My first exposure to software development in an office setting came in the form of an internship over the summer after my Junior year of high school. During this month-long internship, I got my first taste of web application development by building a twitter-like website with PHP and Ruby on Rails. This experience helped me develop a strong ability to quickly learn new skills and thrive under pressure. \n\nThroughout college, I worked as an IT technician and rectified technical issues brought forth by students and staff. I also assisted in configuring new hardware and software across campus. The position taught me how to more effectively communicate my thought process, especially to those who were not as technically inclined. \n\nIn my Senior year of college, I secured another internship with a security startup called Journey. During this internship, I was responsible for designing and building a biometric authentication system for the office doors. The system consisted of a user-friendly front end written in React that connected to a Node.js backend which facilitated communication between the door locks and Journey's API. Additionally, I worked with project managers to develop automatic google cloud functions for streamlining new hire onboarding and maintaining SOC-2 compliance. While my internship was specifically focused on software engineering, I also collaborated with the DevOps team to configure and maintain cloud infrastructure using Terraform. \n\nMy experience with Journey helped me further hone my ability to learn quickly "
+    }
+  ]
+}

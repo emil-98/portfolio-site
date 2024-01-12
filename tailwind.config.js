@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'inter-tight': ['"Inter Tight"', 'sans-serif']
       }
     },
     

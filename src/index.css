@@ -1,18 +1,25 @@
-@import url(https://fonts.googleapis.com/css?family=Rubik|Urbanist|Gabarito);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:bold,regular);
+@import url(https://fonts.googleapis.com/css?family=Gabarito);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:bold,regular|Playfair+Display:bold,regular);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Archivo);
+@import url(https://fonts.googleapis.com/css?family=Archivo:bold);
+@import url(https://fonts.googleapis.com/css?family=Inter);
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:bold,regular|Roboto+Condensed|Work+Sans);
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply font-[Montserrat];
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-[Roboto_Condensed];
   }
   li {
     @apply px-4;
-    @apply font-[Open_Sans];
+    @apply font-[Space_Mono];
+  }
+
+  p {
+    @apply text-lg;
+    @apply font-[Work_Sans];
   }
 }
