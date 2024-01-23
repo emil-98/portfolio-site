@@ -10,16 +10,21 @@
 @tailwind utilities;
 
 @layer base {
+  h1{
+    @apply text-[47px];
+  }
+  h2{
+    @apply text-[28px];
+  }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-[Roboto_Condensed];
+    @apply font-[Roboto_Condensed] font-bold ;
   }
   li {
     @apply px-4;
-    @apply font-[Space_Mono];
+    @apply font-[Space_Mono] text-black dark:text-gray-400;
   }
 
   p {
-    @apply text-lg;
-    @apply font-[Work_Sans];
+    @apply text-lg font-[Work_Sans] tracking-tighter text-black dark:text-gray-400;
   }
 }

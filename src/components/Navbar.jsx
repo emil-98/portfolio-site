@@ -4,12 +4,14 @@ import { HiMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from "../components/Logo"
 import ToggleSwitch from './ToggleSwitch'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
 
-  const [currPage, setCurrPage] = useState("")
+  const underline = "transition-all duration-300 border-b-2 dark:border-gray-400 border-black pb-0"
+  const noUnderline = "transition-all duration-300 border-b-2 border-transparent pb-[2px]"
 
   return(
     <div className="fixed w-full h-[60px] flex justify-between items-center px-4 bg-white dark:bg-slate-950 dark:text-gray-400 shadow-[0_0_15px_rgba(0,0,0,0.5)] z-30">
@@ -26,29 +28,28 @@ const Navbar = () => {
           currState={localStorage.getItem("theme") === "light"}
         />
         <ul className='flex'>
-          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/'>Home</a></li>
-          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/about'>About</a></li>
-          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/skills'> Skills</a></li>
-          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/projects'>Projects</a></li>
-          <li className=' drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><a href='/contact'>Contact</a></li>
+          <li className='drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/'>Home</NavLink></li>
+          <li className='drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/about'>About</NavLink></li>
+          <li className='drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/skills'>Skills</NavLink></li>
+          <li className='drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/projects'>Projects</NavLink></li>
+          <li className='drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/contact'>Contact</NavLink></li>
         </ul>
       </div>
       
       
 
       {/* Hamburger */}
-      
       <div className="md:hidden z-50" onClick={handleClick}>
         {!nav ? <FaBars size={'32'}/> : <FaXmark size={'32'}/>}
       </div>
 
       {/* Mobile Menu */}
       <ul className={`overflow-hidden shadow-[0_0_1000px_rgba(0,0,0,1)] transition-all text-2xl text-gray-400 absolute z-40 top-0 end-0 h-screen bg-slate-950 bg-opacity-70 backdrop-blur-lg flex flex-col space-y-6 items-start ${!nav ? 'w-0 p-0 text-transparent' : 'w-5/6 p-6'}`}>
-        <li className='py-6'><a href='/'>Home</a></li>
-        <li className='py-6'><a href='/about'>About</a></li>
-        <li className='py-6'><a href='/skills'>Skills</a></li>
-        <li className='py-6'><a href='/projects'>Projects</a></li>
-        <li className='py-6'><a href='/contact'>Contact</a></li>
+        <li className='py-6'><NavLink className={({isActive}) => isActive ? underline: noUnderline} to='/'>Home</NavLink></li>
+        <li className='py-6'><NavLink className={({isActive}) => isActive ? underline: noUnderline} to='/about'>About</NavLink></li>
+        <li className='py-6'><NavLink className={({isActive}) => isActive ? underline: noUnderline} to='/skills'>Skills</NavLink></li>
+        <li className='py-6'><NavLink className={({isActive}) => isActive ? underline: noUnderline} to='/projects'>Projects</NavLink></li>
+        <li className='py-6'><NavLink className={({isActive}) => isActive ? underline: noUnderline} to='/contact'>Contact</NavLink></li>
       </ul>
 
 

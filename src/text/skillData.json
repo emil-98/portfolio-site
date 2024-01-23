@@ -2,11 +2,12 @@
   "languages":[
     {
       "id": 0,
-      "title": "Java"
+      "title": "Java",
+      "imgurl": ""
     },
     {
       "id": 1,
-      "title": "C"
+      "title": "C Programming Language"
     },
     {
       "id": 2,

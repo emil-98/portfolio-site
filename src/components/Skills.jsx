@@ -3,10 +3,9 @@ import PageContainer from './PageContainer'
 
 const Skills = () => {
   return (
-    <PageContainer>
-      <h1 className='dark:text-gray-200'>
-        This is the Skills page
-      </h1>
+    <PageContainer
+      title={"My Skills"}
+    >
     </PageContainer>
   )
 }
