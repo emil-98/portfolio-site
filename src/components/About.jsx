@@ -12,6 +12,7 @@ const About = () => {
         <TextContainer
           title={item.title}
           body={item.text}
+          id={item.id}
         />
       ))}
     </PageContainer>

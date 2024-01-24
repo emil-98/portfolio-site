@@ -10,8 +10,8 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
 
-  const underline = "transition-all duration-300 border-b-2 dark:border-gray-400 border-black pb-0"
-  const noUnderline = "transition-all duration-300 border-b-2 border-transparent pb-[2px]"
+  const underline = "transition-all duration-200 border-b-2 dark:border-gray-400 border-black pb-0"
+  const noUnderline = "transition-all duration-200 border-b-2 border-transparent pb-[2px]"
 
   return(
     <div className="fixed w-full h-[60px] flex justify-between items-center px-4 bg-white dark:bg-slate-950 dark:text-gray-400 shadow-[0_0_15px_rgba(0,0,0,0.5)] z-30">
@@ -28,11 +28,11 @@ const Navbar = () => {
           currState={localStorage.getItem("theme") === "light"}
         />
         <ul className='flex'>
-          <li className='drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/'>Home</NavLink></li>
-          <li className='drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/about'>About</NavLink></li>
-          <li className='drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/skills'>Skills</NavLink></li>
-          <li className='drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/projects'>Projects</NavLink></li>
-          <li className='drop-shadow-none duration-300 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/contact'>Contact</NavLink></li>
+          <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/'>Home</NavLink></li>
+          <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/about'>About</NavLink></li>
+          <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/skills'>Skills</NavLink></li>
+          <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/projects'>Projects</NavLink></li>
+          <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/contact'>Contact</NavLink></li>
         </ul>
       </div>
       
@@ -57,22 +57,22 @@ const Navbar = () => {
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-100 bg-blue-500">
-            <a href="https://www.linkedin.com/in/emil-welton" className="flex justify-between items-center w-full text-white dark:text-gray-300">
+            <a href="https://www.linkedin.com/in/emil-welton" className="flex justify-between items-center w-full text-white dark:text-gray-200">
               LinkedIn <FaLinkedin size={30}/>
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-100 bg-gray-900">
-            <a href="https://github.com/emil-98" className="flex justify-between items-center w-full text-white dark:text-gray-300">
+            <a href="https://github.com/emil-98" className="flex justify-between items-center w-full text-white dark:text-gray-200">
               Github <FaGithub size={30}/>
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-100 bg-red-600">
-            <a href="mailto:ewelton98@gmail.com" className="flex justify-between items-center w-full text-white dark:text-gray-300">
+            <a href="mailto:ewelton98@gmail.com" className="flex justify-between items-center w-full text-white dark:text-gray-200">
               Email <HiMail size={30}/>
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-100 bg-gray-600">
-            <a href="/" className="flex justify-between items-center w-full text-white dark:text-gray-300">
+            <a href="/" className="flex justify-between items-center w-full text-white dark:text-gray-200">
               Resume <BsFillPersonLinesFill size={30}/>
             </a>
           </li>

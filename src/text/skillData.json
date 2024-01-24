@@ -1,53 +1,89 @@
 {
-  "languages":[
+  "skills":[
     {
-      "id": 0,
-      "title": "Java",
-      "imgurl": ""
+      "id": 11,
+      "section": "Languages",
+      "items":[
+        {
+          "id": 0,
+          "title": "Java",
+          "filename": "java.svg",
+          "attr": "By Mark Anderson (work for hire for Sun Microsystems) - http://www.logoeps.com/java-eps-vector-logo/40925/, Fair use, https://en.wikipedia.org/w/index.php?curid=51298819"
+        },
+        {
+          "id": 1,
+          "title": "C Programming Language",
+          "filename": "c.png",
+          "attr": "By Qq1040058283 - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=95355293"
+        },
+        {
+          "id": 2,
+          "title": "Javascript",
+          "filename": "javascript.png",
+          "attr": "",
+          "nopad": true
+        },
+        {
+          "id": 3,
+          "title": "Python",
+          "filename": "python.svg",
+          "attr": "By www.python.org - www.python.org, GPL, https://commons.wikimedia.org/w/index.php?curid=34991651"
+        }
+      ]
     },
     {
-      "id": 1,
-      "title": "C Programming Language"
+      "id": 12,
+      "section": "Frameworks",
+      "items":[
+        {
+          "id": 4,
+          "title": "React",
+          "filename": "react.svg",
+          "attr": "By Meta Platforms - https://svgmix.com/item/XJQENg/react, Public Domain, https://commons.wikimedia.org/w/index.php?curid=140630067"
+        },
+        {
+          "id": 5,
+          "title": "Node.js",
+          "filename": "nodejs.svg",
+          "attr": ""
+        },
+        {
+          "id": 6,
+          "title": "Tailwind",
+          "filename": "tailwind.svg",
+          "attr": "By Tailwind CSS - https://tailwindcss.com/, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=110633841"
+        }
+      ]
     },
     {
-      "id": 2,
-      "title": "Javascript"
-    },
-    {
-      "id": 3,
-      "title": "Python"
-    }
-  ],
-  "frameworks":[
-    {
-      "id": 4,
-      "title": "React"
-    },
-    {
-      "id": 5,
-      "title": "Node.js"
-    },
-    {
-      "id": 6,
-      "title": "Tailwind"
-    }
-  ],
-  "technologies": [
-    {
-      "id": 7,
-      "title": "VSCode"
-    },
-    {
-      "id": 8,
-      "title": "IntelliJ IDEA"
-    },
-    {
-      "id": 9,
-      "title": "PyCharm"
-    },
-    {
-      "id": 10,
-      "title": "Android Studio"
+      "id": 13,
+      "section": "Environments",
+      "items": [
+        {
+          "id": 7,
+          "title": "VSCode",
+          "filename": "vscode.svg",
+          "attr": "By Microsoft - https://code.visualstudio.com/brand, Public Domain, https://commons.wikimedia.org/w/index.php?curid=79495290"
+        },
+        {
+          "id": 8,
+          "title": "IntelliJ IDEA",
+          "filename": "intellij_idea.svg",
+          "attr": "By JetBrains - https://www.jetbrains.com/company/brand/logos/, Public Domain, https://commons.wikimedia.org/w/index.php?curid=53185529"
+        },
+        {
+          "id": 9,
+          "title": "PyCharm",
+          "filename": "pycharm.svg",
+          "attr": "By JetBrains - https://www.jetbrains.com/company/brand/logos/, Public Domain, https://commons.wikimedia.org/w/index.php?curid=53185677"
+        },
+        {
+          "id": 10,
+          "title": "Android Studio",
+          "filename": "android_studio.svg",
+          "attr": "By Google - https://developer.android.com/studio, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=137812165"
+        }
+      ]
     }
   ]
 }
