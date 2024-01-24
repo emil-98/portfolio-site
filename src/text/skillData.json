@@ -52,6 +52,12 @@
           "title": "Tailwind",
           "filename": "tailwind.svg",
           "attr": "By Tailwind CSS - https://tailwindcss.com/, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=110633841"
+        },
+        {
+          "id": 14,
+          "title": "Flask",
+          "filename": "flask.svg",
+          "attr": "By Armin Ronacher - http://flask.pocoo.org/static/logo/flask.svg, Copyrighted free use, https://commons.wikimedia.org/w/index.php?curid=19501815"
         }
       ]
     },

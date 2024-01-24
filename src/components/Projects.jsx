@@ -6,7 +6,7 @@ const Projects = () => {
     <PageContainer
       title={"Projects"}
     >
-    
+      <h2 className='flex pt-[60px]'>Under Construction</h2>
     </PageContainer>
   )
 }
