@@ -10,7 +10,7 @@ const Contact = () => {
     <PageContainer
       title={"Contact"}
     >
-      <div className='flex flex-col w-[1000px] h-screen self-center items-center justify-center space-y-10'>
+      <div className='flex flex-1 flex-col max-w-[1000px] self-center items-center justify-center space-y-10'>
         <h2>ewelton98@gmail.com</h2>
         <a href='https://www.linkedin.com/in/emil-welton'><h2 className='duration-300 hover:text-blue-500'>LinkedIn</h2></a>
         <a href='https://github.com/emil-98'><h2 className='duration-300 hover:text-blue-500'>Github</h2></a>

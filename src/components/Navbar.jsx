@@ -43,11 +43,11 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <ul className={`overflow-hidden shadow-[0_0_1000px_rgba(0,0,0,1)] transition-all text-2xl text-gray-400 absolute z-40 top-0 end-0 h-screen bg-slate-950 bg-opacity-70 backdrop-blur-lg flex flex-col space-y-6 items-start ${!nav ? 'w-0 p-0 text-transparent' : 'w-5/6 p-6'}`}>
-        <li className='py-6'><NavLink onClick={() => handleClick} className={({isActive}) => isActive ? underline: noUnderline} to='/'>Home</NavLink></li>
-        <li className='py-6'><NavLink onClick={() => handleClick} className={({isActive}) => isActive ? underline: noUnderline} to='/about'>About</NavLink></li>
-        <li className='py-6'><NavLink onClick={() => handleClick} className={({isActive}) => isActive ? underline: noUnderline} to='/skills'>Skills</NavLink></li>
-        <li className='py-6'><NavLink onClick={() => handleClick} className={({isActive}) => isActive ? underline: noUnderline} to='/projects'>Projects</NavLink></li>
-        <li className='py-6'><NavLink onClick={() => handleClick} className={({isActive}) => isActive ? underline: noUnderline} to='/contact'>Contact</NavLink></li>
+        <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline: noUnderline} to='/'>Home</NavLink></li>
+        <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline: noUnderline} to='/about'>About</NavLink></li>
+        <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline: noUnderline} to='/skills'>Skills</NavLink></li>
+        <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline: noUnderline} to='/projects'>Projects</NavLink></li>
+        <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline: noUnderline} to='/contact'>Contact</NavLink></li>
       </ul>
 
 
