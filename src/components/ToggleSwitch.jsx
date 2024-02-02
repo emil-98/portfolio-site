@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 
 const ToggleSwitch = ({offIcon, onIcon, currState}) => {
 
-  const [isChecked, setIsChecked] = useState(currState)
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark').matches
+  const [isChecked, setIsChecked] = useState(!prefersDark)
 
 
   useEffect(() => {
