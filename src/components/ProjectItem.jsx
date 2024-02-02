@@ -3,8 +3,6 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa6'
 
 const ProjectItem = ({id, title, skillsUsed, github, link, body, image}) => {
 
-  console.log(skillsUsed)
-
   const coverImg = `/assets/projectimages/${image}`
 
   const [expanded, setExpanded] = useState(false)
@@ -13,7 +11,7 @@ const ProjectItem = ({id, title, skillsUsed, github, link, body, image}) => {
   return (
     <div 
       key={id}
-      className={`flex flex-col duration-300 group h-fit col-span-4 md:col-span-2 overflow-hidden  bg-white dark:bg-slate-950 rounded-[25px] shadow-[0_0_10px_rgba(0,0,0,0.5)]`}
+      className={`flex flex-col duration-300 group h-fit col-span-2 overflow-hidden  bg-white dark:bg-slate-950 rounded-[25px] shadow-[0_0_10px_rgba(0,0,0,0.5)]`}
     >
       <div 
         style={{'--cover-src':`url(${coverImg})`}}

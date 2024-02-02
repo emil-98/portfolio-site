@@ -13,7 +13,7 @@ const GridContainer = ({children, title, id, gridcols}) => {
         <h2 className='col-span-1 md:col-span-2'>
           {title}
         </h2>
-        <div className={`grid grid-cols-4 gap-8`}>
+        <div className={`grid grid-cols-2 md:grid-cols-4 gap-8`}>
           {children}
         </div>
       </div>
