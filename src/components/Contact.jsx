@@ -10,8 +10,10 @@ const Contact = () => {
     <PageContainer
       title={"Contact"}
     >
-      <div className='md:w-[400px] w-full h-[100px] rounded-[25px] dark:bg-slate-900 shadow-[0_0_10px_rgba(0,0,0,0.5)]'>
-
+      <div className='md:w-[400px] w-full h-[100px] rounded-[25px] p-2 dark:bg-slate-900 shadow-[0_0_10px_rgba(0,0,0,0.5)]'>
+        <h2>
+          Title
+        </h2>
       </div>
     </PageContainer>
   )

@@ -14,6 +14,7 @@ const Skills = () => {
         return <GridContainer
           id={item.id}
           title={item.section}
+          gridcols={4}
         >
           {item.items?.map((skill) => {
             return <SkillItem
@@ -21,6 +22,7 @@ const Skills = () => {
               title={skill.title}
               fileName={skill.filename}
               nopad={skill.nopad && skill.nopad}
+              invert={skill.invert && skill.invert}
             />
           })}
         </GridContainer>

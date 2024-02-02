@@ -3,10 +3,30 @@
     {
       "id": 0,
       "title": "Android Exercise Tracker",
+      "skillicons": ["java.svg", "android_studio.svg"],
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum faucibus nisl blandit tincidunt. Nulla fermentum at ligula vitae viverra. Donec eros urna, euismod nec augue eu, convallis viverra tellus. Quisque egestas dolor vitae porta tempor. Nam fermentum nulla eget lorem vulputate cursus. Vivamus sit amet tincidunt ipsum. Donec ac urna sit amet tellus egestas dapibus non et enim. ",
+      "image": ""
+    },
+    {
+      "id": 1,
+      "title": "Journey Unlock",
+      "skillicons": ["react.svg", "nodejs.svg"],
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum faucibus nisl blandit tincidunt. Nulla fermentum at ligula vitae viverra. Donec eros urna, euismod nec augue eu, convallis viverra tellus. Quisque egestas dolor vitae porta tempor. Nam fermentum nulla eget lorem vulputate cursus. Vivamus sit amet tincidunt ipsum. Donec ac urna sit amet tellus egestas dapibus non et enim. ",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "title": "SSL file server",
+      "skillicons": ["c.png"],
       "desc": "",
-      "images": [
-        
-      ]
+      "image": ""
+    },
+    {
+      "id": 3,
+      "title": "",
+      "skillicons": ["python.svg", "pycharm.svg"],
+      "desc": "",
+      "image": ""
     }
   ]
 }

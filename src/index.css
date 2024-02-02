@@ -1,15 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Gabarito);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:bold,regular|Playfair+Display:bold,regular);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Archivo:bold);
-@import url(https://fonts.googleapis.com/css?family=Inter);
-@import url(https://fonts.googleapis.com/css?family=Space+Mono:bold,regular|Roboto+Condensed|Work+Sans);
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:bold,regular|Roboto+Condensed:bold,regular|Work+Sans);
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+
+  * {
+    @apply min-w-0;
+  }
+
   h1{
     @apply text-[47px];
   }

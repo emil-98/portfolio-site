@@ -19,28 +19,26 @@ const Navbar = () => {
         <Logo/>
       </div>
 
-      {/* Desktop Menu */}
+      {/* Combined desktop/mobile menu */}
       
-      <div className='hidden md:flex'>
+      <div className='flex place-items-center'>
         <ToggleSwitch
           offIcon={'🌚'}
           onIcon={'🌞'}
           currState={localStorage.getItem("theme") === "light"}
         />
-        <ul className='flex'>
+        <ul className='hidden md:flex'>
           <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/'>Home</NavLink></li>
           <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/about'>About</NavLink></li>
           <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/skills'>Skills</NavLink></li>
           <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/projects'>Projects</NavLink></li>
           <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/contact'>Contact</NavLink></li>
         </ul>
-      </div>
-      
-      
 
-      {/* Hamburger */}
-      <div className="md:hidden z-50" onClick={handleClick}>
-        {!nav ? <FaBars size={'32'}/> : <FaXmark size={'32'}/>}
+        {/* Hamburger */}
+        <div className="flex md:hidden ps-4 z-50" onClick={handleClick}>
+          {!nav ? <FaBars size={'32'}/> : <FaXmark size={'32'}/>}
+        </div>
       </div>
 
       {/* Mobile Menu */}

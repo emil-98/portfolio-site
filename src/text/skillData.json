@@ -12,7 +12,7 @@
         },
         {
           "id": 1,
-          "title": "C Programming Language",
+          "title": "C Programming",
           "filename": "c.png",
           "attr": "By Qq1040058283 - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=95355293"
         },
@@ -57,7 +57,14 @@
           "id": 14,
           "title": "Flask",
           "filename": "flask.svg",
-          "attr": "By Armin Ronacher - http://flask.pocoo.org/static/logo/flask.svg, Copyrighted free use, https://commons.wikimedia.org/w/index.php?curid=19501815"
+          "attr": "By Armin Ronacher - http://flask.pocoo.org/static/logo/flask.svg, Copyrighted free use, https://commons.wikimedia.org/w/index.php?curid=19501815",
+          "invert": true
+        },
+        {
+          "id": 15,
+          "title": "P5.js",
+          "filename": "p5js.svg",
+          "attr": "By Design Systems International / Processing Foundation - https://p5js.org/, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=126797764"
         }
       ]
     },
