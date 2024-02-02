@@ -10,7 +10,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
 
-  const underline = "transition-all duration-200 border-b-2 dark:border-gray-400 border-black pb-0"
+  const underline = "transition-all duration-200 border-b-2 border-blue-500 pb-0"
   const noUnderline = "transition-all duration-200 border-b-2 border-transparent pb-[2px]"
 
   return(

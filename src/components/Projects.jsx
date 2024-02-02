@@ -14,7 +14,11 @@ const Projects = () => {
       >
         {projectData?.projects?.map((project) => {
           return <ProjectItem
+                   id={project.id}
                    title={project.title}
+                   skillsUsed={project.skillicons}
+                   github={project.github}
+                   link={project.link}
                    body={project.desc}
                    image={project.image}
                  />

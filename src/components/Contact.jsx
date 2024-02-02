@@ -10,10 +10,10 @@ const Contact = () => {
     <PageContainer
       title={"Contact"}
     >
-      <div className='md:w-[400px] w-full h-[100px] rounded-[25px] p-2 dark:bg-slate-900 shadow-[0_0_10px_rgba(0,0,0,0.5)]'>
-        <h2>
-          Title
-        </h2>
+      <div className='flex flex-col w-[1000px] h-screen self-center items-center justify-center space-y-10'>
+        <h2>ewelton98@gmail.com</h2>
+        <a href='https://www.linkedin.com/in/emil-welton'><h2 className='duration-300 hover:text-blue-500'>LinkedIn</h2></a>
+        <a href='https://github.com/emil-98'><h2 className='duration-300 hover:text-blue-500'>Github</h2></a>
       </div>
     </PageContainer>
   )
