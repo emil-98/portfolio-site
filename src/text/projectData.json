@@ -20,7 +20,7 @@
       "title": "SSL File Server",
       "skillicons": ["c.png", "vscode.svg"],
       "github": "https://github.com/emil-98/mp3-server",
-      "desc": "",
+      "desc": "I spearheaded a collaborative project focused on developing a Linux application using C, showcasing my expertise in managing a team and integrating diverse technologies. The team of three collaborated on tasks, and I assumed the responsibility of orchestrating the integration of individual components into the final product. The application leveraged the SDL2 audio playback library for enhanced audio features and employed SSL communication to establish secure client-server interactions. This experience not only demonstrated my proficiency in C programming but also highlighted my leadership skills in coordinating a successful team effort and delivering a cohesive solution.",
       "image": "client_interface.png"
     }
   ]
