@@ -6,6 +6,7 @@ import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import { Routes, Route } from 'react-router-dom'
+import Blog from './components/Blog'
 
 
 
@@ -24,6 +25,7 @@ const App = () => {
         <Route path='/skills' element={<Skills/>}/>
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/blog' element={<Blog/>}/>
       </Routes>
     </>
   )

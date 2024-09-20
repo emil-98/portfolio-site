@@ -31,6 +31,7 @@ const Navbar = () => {
           <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/about'>About</NavLink></li>
           <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/skills'>Skills</NavLink></li>
           <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/projects'>Projects</NavLink></li>
+          <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/blog'>Blog</NavLink></li>
           <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/contact'>Contact</NavLink></li>
         </ul>
 
@@ -46,6 +47,7 @@ const Navbar = () => {
         <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/about'>About</NavLink></li>
         <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/skills'>Skills</NavLink></li>
         <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/projects'>Projects</NavLink></li>
+        <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/blog'>Blog</NavLink></li>
         <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/contact'>Contact</NavLink></li>
       </ul>
 
