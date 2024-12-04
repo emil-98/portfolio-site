@@ -14,14 +14,14 @@
       "skillicons": ["java.svg", "android_studio.svg"],
       "github": "https://github.com/emil-98/lift-tracker",
       "desc": "During my college capstone project, I successfully developed an Android application that showcased my proficiency in various technologies and development processes. The app, written in Java, followed Material Design conventions and leveraged Fragments to enhance performance. Employing the MVC architecture, I ensured a modular and maintainable codebase. The app featured a robust local SQLite database for efficient data storage. Despite initial apprehensions about acquiring the necessary skills within the given timeframe, I adopted a disciplined approach to time management. By adhering to a strict schedule and diligently organizing my tasks, I gained proficiency in Android app development and delivered substantial progress at each checkpoint. This dedication resulted in the app earning a perfect score of 100% upon completion, underscoring my commitment to excellence in software development.",
-      "image": "lift_app.png"
+      "image": "/assets/projectimages/lift_app.png"
     },
     {
       "id": 1,
       "title": "Journey Unlock",
       "skillicons": ["react.svg", "nodejs.svg", "vscode.svg"],
       "desc": "I undertook a challenging yet rewarding project where I designed and built a system using a stack comprising React for the front end, an Express server running on a Node.js back end, and integrating external APIs. At the project's inception, my familiarity with modern JavaScript was limited, and I had no prior experience with React or Node.js. Additionally, I was unfamiliar with the intricacies of working with REST APIs. Over a dedicated four-month period, I immersed myself in learning JavaScript ES6, becoming competent with React, and building a robust Express server in Node.js. The app accepted user ID and facial data, which was then relayed to the Express server. The server, in turn, communicated with the Journey authentication API to validate the input. Based on the response from the Journey API, the back end made informed decisions to unlock the office door through integration with the Gallagher lock API. This project not only showcased my ability to rapidly learn new skills but also resulted in the creation of one of the company's first use cases for their product. It stands as a testament to my ability to adapt and excel in dynamic development environments while delivering innovative solutions.",
-      "image": "journey_gallagher.png"
+      "image": "/assets/projectimages/journey_gallagher.png"
     },
     {
       "id": 2,
@@ -29,7 +29,7 @@
       "skillicons": ["c.png", "vscode.svg"],
       "github": "https://github.com/emil-98/mp3-server",
       "desc": "I spearheaded a collaborative project focused on developing a Linux application using C, showcasing my expertise in managing a team and integrating diverse technologies. The team of three collaborated on tasks, and I assumed the responsibility of orchestrating the integration of individual components into the final product. The application leveraged the SDL2 audio playback library for enhanced audio features and employed SSL communication to establish secure client-server interactions. This experience not only demonstrated my proficiency in C programming but also highlighted my leadership skills in coordinating a successful team effort and delivering a cohesive solution.",
-      "image": "client_interface.png"
+      "image": "/assets/projectimages/client_interface.png"
     }
   ]
 }

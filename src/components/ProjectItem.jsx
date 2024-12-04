@@ -3,7 +3,7 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa6'
 
 const ProjectItem = ({id, title, skillsUsed, github, link, body, image}) => {
 
-  const coverImg = `/assets/projectimages/${image}`
+  const coverImg = `${image}`
 
   const [expanded, setExpanded] = useState(false)
   const handleClick = () => setExpanded(!expanded)
