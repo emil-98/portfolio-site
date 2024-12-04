@@ -1,14 +1,75 @@
 {
   "about": [
     {
-      "id": "0",
+      "id": 1,
       "title": "Education",
-      "text": "I first took an interest in programming during high school, having been curious about technology from a young age. I spent much of my free time in tenth grade teaching myself Javascript fundamentals and completed an honors class in C++ the following year. \n\nBy the time I started college, I had made up my mind to study Computer Science and focused my efforts on mastering Java. After developing a strong foundation in Object-Oriented Programming, I explored other avenues such as Flask web development and Linux application development with C. \n\nI completed my degree by designing and building a workout tracker app for Android that integrated a SQLite database and followed Material design conventions."
+      "items": [
+        {
+          "id": 10,
+          "name": "Regis University",
+          "date": "August 2019 - April 2023",
+          "desc": "Bachelor of Science - Computer Science"
+        }
+      ]
     },
     {
-      "id": "1",
+      "id": 2,
       "title": "Experience",
-      "text": "Throughout college, I worked as an IT technician and solved technical issues brought forth by students and staff. I also assisted in configuring new hardware and software across campus. The position taught me how to more effectively communicate my thought process, especially to those who were not as technically inclined. \n\nIn my Senior year of college, I secured an internship with a zero-knowledge digital identity startup called Journey. During this internship, I was responsible for designing and implementing a biometric authentication system for the office doors. Additionally, I worked with project managers to develop automatic google cloud functions for streamlining new hire onboarding and maintaining SOC-2 compliance. While my internship was specifically focused on software engineering, I also collaborated with the DevOps team to configure and maintain cloud infrastructure using Terraform. \n\nMy experience with Journey helped me hone my ability to learn quickly and apply my knowledge to real-world software projects. During this internship, I was challenged to become competent in front and backend web development with modern technologies in a matter of months, and through perseverance, succeeded."
+      "items": [
+        {
+          "id": 20,
+          "name": "Regis University",
+          "date": "October 2024 - Present",
+          "desc": "IT Technician I",
+          "tasks": [
+            {
+              "id": 200,
+              "text": "Orchestrated a comprehensive modernization initiative for 200 computers and 4 printers spanning 4 campus computer labs, optimizing tech infrastructure to foster a cutting-edge and efficient learning environment"
+            },
+            {
+              "id": 201,
+              "text": "Leveraged ServiceNow to assess and resolve up to 10 technical issues per day as reported by students and staff, streamlining the troubleshooting process and ensuring swift resolution for optimal user experience"
+            }
+          ]
+        },
+        
+        {
+          "id": 21,
+          "name": "Temp Connect",
+          "date": "Mar 2024 - Present",
+          "desc": "Software Developer",
+          "tasks": [
+            {
+              "id": 220,
+              "text": "Collaborated with founders and developers to modernize crucial mobile infrastructure, enhancing ad performance and maintaining compliance with Google Play standards"
+            },
+            {
+              "id": 210,
+              "text": "Improved website functionality by implementing new features, optimizing user experience and troubleshooting issues, leading to increased user engagement and satisfaction"
+            },
+            {
+              "id": 211,
+              "text": "Refactored server-side code on AWS infrastructure "
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "name": "Journey ID",
+          "date": "February 2022 - October 2022",
+          "desc": "Software Engineer Intern",
+          "tasks": [
+            {
+              "id": 221,
+              "text":"Boosted market presence by developing a customer-facing system leveraging proprietary biometric technology. The app consisted of a React frontend connected to an Express server handling requests to 2 REST APIs, supporting up to 1000 requests per user per day"
+            },
+            {
+              "id": 222,
+              "text": "Streamlined day-to-day office tasks by automating HR responsibilites using Javascript and Google Cloud, reducing manual data entry by 50% and saving 10+ hours per week"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

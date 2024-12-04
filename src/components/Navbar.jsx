@@ -4,6 +4,7 @@ import { HiMail } from 'react-icons/hi'
 import Logo from "../components/Logo"
 import ToggleSwitch from './ToggleSwitch'
 import { NavLink } from 'react-router-dom'
+import navbarLinkText from '../text/navbarLinkText.json'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -27,12 +28,17 @@ const Navbar = () => {
           currState={localStorage.getItem("theme") === "light"}
         />
         <ul className='hidden md:flex'>
-          <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/'>Home</NavLink></li>
-          <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/about'>About</NavLink></li>
-          <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/skills'>Skills</NavLink></li>
-          <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/projects'>Projects</NavLink></li>
-          <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/blog'>Blog</NavLink></li>
-          <li className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/contact'>Contact</NavLink></li>
+          {navbarLinkText.items.map(item => {
+            return <li 
+              key={item.id}
+              className='drop-shadow-none duration-200 hover:drop-shadow-[0_0_10px_rgba(0,0,0,1)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'>
+                <NavLink className={({isActive}) => isActive ? underline : noUnderline} 
+                  to={item.route}
+                >
+                  {item.text}
+                </NavLink>
+            </li>
+          })}
         </ul>
 
         {/* Hamburger */}
@@ -43,12 +49,20 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <ul className={`overflow-hidden shadow-[0_0_1000px_rgba(0,0,0,1)] transition-all text-2xl absolute z-40 top-0 end-0 h-screen bg-white dark:bg-slate-950 bg-opacity-70 backdrop-blur-lg flex flex-col space-y-6 items-start ${!nav ? 'w-0 p-0 text-transparent' : 'w-5/6 p-6'}`}>
-        <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/'>Home</NavLink></li>
-        <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/about'>About</NavLink></li>
-        <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/skills'>Skills</NavLink></li>
-        <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/projects'>Projects</NavLink></li>
-        <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/blog'>Blog</NavLink></li>
-        <li onClick={handleClick} className='py-6'><NavLink className={({isActive}) => isActive ? underline : noUnderline} to='/contact'>Contact</NavLink></li>
+        {navbarLinkText.items.map(item => {
+          return <li 
+            onClick={handleClick} 
+            className='py-6'
+            key={item.id}
+          >
+            <NavLink 
+              className={({isActive}) => isActive ? underline : noUnderline}  
+              to={item.route}
+            >
+              {item.text}
+            </NavLink>
+          </li>
+        })}
       </ul>
 
 
