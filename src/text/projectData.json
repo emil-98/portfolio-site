@@ -1,6 +1,14 @@
 {
   "projects": [
     {
+      "id": 3,
+      "title": "What Should I Watch?",
+      "skillicons": ["java.svg", "android_studio.svg"],
+      "github": "https://github.com/emil-98/wsiw-app",
+      "desc": "I am actively developing an intuitive and user-focused movie recommendation app that tracks user preferences and uses them to make intelligent suggestions.",
+      "image": "https://github.com/emil-98/wsiw-app/raw/main/wsiw_screenshot.png"
+    },
+    {
       "id": 0,
       "title": "Android Exercise Tracker",
       "skillicons": ["java.svg", "android_studio.svg"],
